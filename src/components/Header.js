@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Menu from './inc/bars-solid.svg'
 import Close from './inc/times-solid.svg'
 import CartIcon from './inc/shopping-cart-solid.svg'
+//import {Link} from 'react-router-dom'
+import './css/Header.css'
 export class Header extends Component {
 
     render() {
@@ -15,7 +17,7 @@ export class Header extends Component {
             </div> 
             <div className = "logo" >
                 <h1>
-                    <Link to="/">Nike</Link>
+                    <Link to="/">Manushtech</Link>
                 </h1>
             </div>
             <nav>
