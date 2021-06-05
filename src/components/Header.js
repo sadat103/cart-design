@@ -7,11 +7,21 @@ import CartIcon from './inc/shopping-cart-solid.svg'
 import './css/Header.css'
 export class Header extends Component {
 
+
+    state ={
+        toggle : false
+    }
+    menuToggle=()=>
+    {
+
+        this.setState({toggle: !this.state.toggle})
+    }
     render() {
+        const {toggle} = this.state;
         return (
 
             <header>
-            <div className = "menu" >
+            <div className = "menu" onClick={this.menuToggle} >
             <img src = { Menu } alt = ""   width = "20" / >
 
             </div> 
@@ -21,13 +31,13 @@ export class Header extends Component {
                 </h1>
             </div>
             <nav>
-                <ul>
+                <ul className={toggle? "toggle":""}>
                      <li > < Link to = "/" > Home </Link></li >
                      <li > < Link to = "/" > Product </Link></li >
                      <li > < Link to = "/" > Contact </Link></li >
                      <li > < Link to = "/" > About </Link></li >
                      <li > < Link to = "/" > Login/Register </Link></li >
-                     <li className="close">
+                     <li className="close" onClick={this.menuToggle}>
                          <img src = {Close} alt = ""   width = "20" / >  
                      </li>
 
