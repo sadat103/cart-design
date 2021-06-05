@@ -8,24 +8,18 @@ import Section from './components/Section'
 class App extends React.Component {
 
     render() {
-        return ( <
-            div className = "app" >
-            <
-            Router >
-            <
-            Header / >
-            <
-            Section / >
-            <
-            /Router> <
-            /div>
+        return ( 
+        <div className = "app" >
+            <Router >
+            <Header / >
+            <Section / >
+            </Router> 
+        </div>
 
 
         );
 
     }
-
-
 
 }
 
