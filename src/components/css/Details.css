@@ -21,10 +21,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    color: darkblue;
 }
 .box .row h2{
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: crimson;
+}
+.box .row h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: chocolate;
 }
 .box .row span{
     color: crimson;
