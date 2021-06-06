@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Menu from './svg/bars-solid.svg'
 import Close from './svg/times-solid.svg'
 import CartIcon from './svg/shopping-cart-solid.svg'
+import logo from './svg/manush_tech.png'
 import {Link} from 'react-router-dom'
 import './css/Header.css'
 import {DataContext} from './Context'
@@ -29,7 +30,7 @@ export class Header extends Component {
                     <img src={Menu} alt="" width="20"/>
                 </div>
                 <div className="logo">
-                    <h1><Link to="/">MANUSHTECH</Link></h1>
+                   <img src={logo} alt="" width="220"/>
                 </div>
                 <nav>
                     <ul className={toggle ? "toggle" : ""}>

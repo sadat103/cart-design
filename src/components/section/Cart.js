@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import {DataContext} from '../Context'
 import {Link} from 'react-router-dom'
+import { render } from 'react-dom'
 import Colors from './Colors'
 import '../css/Details.css'
 import '../css/Cart.css'
+import { transitions, positions, Provider as AlertProvider } from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
 
 export class Cart extends Component {
     static contextType = DataContext;
@@ -13,6 +16,7 @@ export class Cart extends Component {
     }
     
     render() {
+        //const alert = useAlert()
         const {cart,increase,reduction,removeProduct,total} = this.context;
         if(cart.length === 0){
             return <h2 style={{textAlign:"center"}}>Nothings Product</h2>
