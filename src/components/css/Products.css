@@ -54,8 +54,9 @@
 .card button{
     border: none;
     outline: none;
-    background: rgb(8, 0, 114);
-    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(25, 187, 202);
+    color: rgb(10, 10, 10);
     width: 60%;
     height: 40px;
     display: block;

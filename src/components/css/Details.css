@@ -23,6 +23,12 @@
     margin-bottom: 15px;
     color: darkblue;
 }
+.box .row h4{
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 1px;
+    color: rgb(56, 0, 160);
+}
 .box .row h2{
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -49,9 +55,10 @@
     margin: 15px 0;
 }
 .box .cart{
-    background: #333;
-    color: white;
+    background: rgb(25, 187, 202);
+    color: rgb(12, 11, 11);
     text-decoration: none;
     padding: 10px 25px;
     display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
 }

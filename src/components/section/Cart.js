@@ -26,21 +26,34 @@ export class Cart extends Component {
                     {
                         cart.map(item =>(
                             <div className="details cart" key={item.id}>
-                                <img src={item.image} alt=""/>
+                                <img src={item.image}  alt="" width="10" height="10"/>
                                 <div className="box">
                                     <div className="row">
                                         <h2>{item.title}</h2>
-                                        <span>${item.price * item.count}</span>
+    
                                     </div>
             
-                                    <p>{item.description}</p>
+                                    
                                     <p>{item.content}</p>
+                                    <span></span>
                                     <div className="amount">
                                         <button className="count" onClick={() => reduction(item.id)}> - </button>
                                         <span>{item.count}</span>
                                         <button className="count" onClick={() => increase(item.id)}> + </button>
-                                        <h3>${item.price * item.count}</h3>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span1>৳{item.price}</span1>
+                                        <button className="count1" > × </button>
+                                        <span2>{item.count}</span2>
+                                        <button className="count1" > = </button>
+                                        <span1>৳{(item.price * item.count).toFixed(2)}</span1>
+
+                        
                                     </div>
+                            
                                 </div>
                                 <div className="delete" onClick={() => removeProduct(item.id)}>X</div>
                             </div>

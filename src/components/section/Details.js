@@ -40,7 +40,12 @@ export class Details extends Component {
                                 <div className="row">
                                     <h2>{item.title}</h2>
                 
-                                    <span>${item.price}</span>
+        
+                                </div>
+                                <div className="row">
+                
+                                    <h4>Price: ৳{item.price}</h4>
+                                    
                                 </div>
                                 <div className="row">
                 
