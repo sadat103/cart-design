@@ -46,7 +46,7 @@
     color: crimson;
 }
 .card span{
-    color: crimson;
+    color: rgb(5, 0, 77);
 }
 .card p{
     margin: 10px 0;
@@ -55,8 +55,9 @@
     border: none;
     outline: none;
     font-family: 'Courier New', Courier, monospace;
-    background: rgb(25, 187, 202);
+    background: rgb(24, 255, 101);
     color: rgb(10, 10, 10);
+    font-weight: bold;
     width: 60%;
     height: 40px;
     display: block;

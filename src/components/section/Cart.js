@@ -19,13 +19,15 @@ export class Cart extends Component {
         //const alert = useAlert()
         const {cart,increase,reduction,removeProduct,total} = this.context;
         if(cart.length === 0){
-            return <h2 style={{textAlign:"center"}}>Nothings Product</h2>
+            return <h2 style={{textAlign:"center"}}>No Product</h2>
         }else{
             return (
                 <>
                     {
+                        
                         cart.map(item =>(
                             <div className="details cart" key={item.id}>
+                    
                                 <img src={item.image}  alt="" width="10" height="10"/>
                                 <div className="box">
                                     <div className="row">
@@ -59,9 +61,21 @@ export class Cart extends Component {
                             </div>
                         ))
                     }
+                     <div className="new1"></div>
+                    <div className="total1">
+            
+                        
+                        <h5>Sub-Total  =  ৳ {(total).toFixed(2)}</h5>
+                    </div>
+                    <div className="total1">
+            
+                        
+                        <h5>Delivery-Charge  =   ৳ 30 </h5>
+                    </div>
+                    <div className="new1"> </div>
                     <div className="total">
                         <Link to="/payment">Payment</Link>
-                        <h3>Total: ${total}</h3>
+                        <h3>Grand-Total  =  ৳ {(total+30).toFixed(2)}</h3>
                     </div>
                 </>
                 )

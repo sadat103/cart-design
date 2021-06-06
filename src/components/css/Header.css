@@ -1,4 +1,5 @@
 header{
+    background-color: rgb(135, 224, 246);
     min-height: 70px;
     display: flex;
     justify-content: space-around;
@@ -9,6 +10,9 @@ header .logo a{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+}
+.color-nav{
+    background-color: turquoise;
 }
 header nav{
     display: flex;
